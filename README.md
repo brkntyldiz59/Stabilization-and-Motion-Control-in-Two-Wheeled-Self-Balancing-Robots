@@ -10,7 +10,7 @@ This project presents an innovative approach to the stabilization and motion con
 
 
 
-!\[Self-Balancing Robot](assets/robot\_view.jpg)
+!\[Self-Balancing Robot](https://github.com/brkntyldiz59/Stabilization-and-Motion-Control-in-Two-Wheeled-Self-Balancing-Robots/blob/main/assets/robot_view.jpg)
 
 
 
