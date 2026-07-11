@@ -182,7 +182,7 @@ Click the links below to watch the dynamic performance and stability tests of th
 
 \* \[▶️ Watch: Equilibrium (Zero-Velocity) Test](https://youtube.com/shorts/lMF--UhxCo0)
 
-\* \[▶️ Watch: Forward/Backward Motion Control](https://youtube.com/shorts/uI9pQXXA0wc)
+\* \[▶️ Watch: Forward/Backward Motion Control](https://www.youtube.com/shorts/uI9pQxXA0wc)
 
 \* \[▶️ Watch: External Disturbance Rejection](https://youtube.com/shorts/UOZk5o-JTDY)
 
