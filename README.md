@@ -10,7 +10,7 @@ This project presents an innovative approach to the stabilization and motion con
 
 
 
-!\[Self-Balancing Robot](assets/robot\_view.png)
+!\[Self-Balancing Robot](assets/robot\_view.jpg)
 
 
 
@@ -26,7 +26,7 @@ The robot's body is modeled as an inverted pendulum to understand its physical a
 
 
 
-!\[Impulse Response](assets/impulse\_response.png)
+!\[Impulse Response](assets/impulse\_response.jpg)
 
 
 
@@ -36,7 +36,7 @@ The robot's body is modeled as an inverted pendulum to understand its physical a
 
 
 
-!\[Root Locus](assets/root\_locus.png)
+!\[Root Locus](assets/root\_locus.jpg)
 
 
 
@@ -54,19 +54,19 @@ To maintain an optimal center of gravity, a three-layer chassis architecture was
 
 \* \*\*Bottom Layer:\*\* Houses the 12V 450 RPM DC motors with encoders and the 4S 18650 Li-ion battery pack, keeping the heaviest components as low as possible.
 
-!\[Bottom Layer](assets/bottom\_layer.png)
+!\[Bottom Layer](assets/bottom\_layer.jpg)
 
 
 
 \* \*\*Middle Layer:\*\* Acts as the central processing unit, containing the 32-bit dual-core Raspberry Pi Pico H, the high-efficiency MOSFET-based TB6612FNG motor driver, and tiered 12V/5V step-down voltage regulators to isolate logic components from voltage fluctuations.
 
-!\[Middle Layer](assets/middle\_layer.png)
+!\[Middle Layer](assets/middle\_layer.jpg)
 
 
 
 \* \*\*Top Layer:\*\* Houses the MPU6050 IMU sensor to maximize accelerometer sensitivity, along with the HC-06 Bluetooth module for remote telemetry and control.
 
-!\[Top Layer](assets/top\_layer.png)
+!\[Top Layer](assets/top\_layer.jpg)
 
 
 
@@ -82,7 +82,7 @@ Obtaining a clean pitch angle is the most critical stage for control. The MPU605
 
 
 
-!\[Raw Sensor Data](assets/raw\_data.png)
+!\[Raw Sensor Data](assets/raw\_data.jpg)
 
 
 
@@ -92,7 +92,7 @@ Obtaining a clean pitch angle is the most critical stage for control. The MPU605
 
 
 
-!\[Kalman Performance](assets/kalman\_performance.png)
+!\[Kalman Performance](assets/kalman\_performance.jpg)
 
 
 
@@ -108,7 +108,7 @@ Controlling both vertical balance and horizontal velocity simultaneously cannot 
 
 
 
-!\[Control Block Diagram](assets/block\_diagram.png)
+!\[Control Block Diagram](assets/block\_diagram.jpg)
 
 
 
@@ -134,7 +134,7 @@ The real-world performance of the cascaded architecture was validated through dy
 
 When instructed to stop on a flat surface, the robot maintains its angle within a narrow band of -1.5° and 1.5°. The small continuous motor oscillations (within a range of ± 40 pulses) are caused by mechanical realities, such as gear backlash inside the DC motor gearboxes, which the highly sensitive controller continuously corrects.
 
-!\[Zero Command](assets/zero\_command.png)
+!\[Zero Command](assets/zero\_command.jpg)
 
 
 
@@ -142,7 +142,7 @@ When instructed to stop on a flat surface, the robot maintains its angle within 
 
 When a sudden external physical force is applied, the pitch angle deviates up to ± 8°. The inner loop reacts instantaneously, driving the motors to peaks of 300 to 400 pulses to catch the falling center of gravity. The robot exhibits a critically damped response, absorbing the hit and returning to its 0° baseline in less than 1 second without swinging back and forth.
 
-!\[External Disturbance](assets/external\_disturbance.png)
+!\[External Disturbance](assets/external\_disturbance.jpg)
 
 
 
@@ -150,7 +150,7 @@ When a sudden external physical force is applied, the pitch angle deviates up to
 
 To initiate forward motion, the outer loop calculates a negative reference angle. The robot intentionally "falls" forward, dropping to approximately -3.5°, and then settles between -1° and -2° to maintain a steady speed of 130 pulses. Backward motion mirrors this dynamic, settling at positive angles to sustain reverse velocity.
 
-!\[Forward Command](assets/forward\_command.png)
+!\[Forward Command](assets/forward\_command.jpg)
 
 
 
@@ -164,7 +164,7 @@ To test extreme dynamic limits, the robot was driven onto a 22° ramp.
 
 \* \*\*Equilibrium on Ramp:\*\* When given a stop command on the incline, the integral term of the outer loop accumulates the gravitational error. Instead of sliding backward, the robot locks into a permanent forward tilt of -24°, successfully keeping its center of mass directly over the wheels' contact point.
 
-!\[Equilibrium on Ramp](assets/equilibrium.png)
+!\[Equilibrium on Ramp](assets/equilibriumjpg)
 
 
 
